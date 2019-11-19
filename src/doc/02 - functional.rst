@@ -181,107 +181,107 @@ The following table describes in detail the interfaces and associated services.
     :class: longtable
     :widths: 30 70
     
-    =========================== 	=====================================================================================
-    **Services**                	**Description**
-    --------------------------- 	-------------------------------------------------------------------------------------
+    ===================================   =====================================================================================
+    **Services**                	  **Description**
+    -----------------------------------   -------------------------------------------------------------------------------------
     **Notification**
-    --------------------------- 	-------------------------------------------------------------------------------------
-    Subscribe				Subscribe a URL to receive notifications sent to one topic
-    Unsubscribe				Unsubscribe a URL from the list of receiver for one topic
-    Confirm 				Confirm that the URL used during the subscription is valid
-    Publish				Notify of a new event all systems that subscribed to this topic
-    --------------------------- 	-------------------------------------------------------------------------------------
+    -----------------------------------   -------------------------------------------------------------------------------------
+    Subscribe				  Subscribe a URL to receive notifications sent to one topic
+    Unsubscribe				  Unsubscribe a URL from the list of receiver for one topic
+    Confirm 				  Confirm that the URL used during the subscription is valid
+    Publish				  Notify of a new event all systems that subscribed to this topic
+    -----------------------------------   -------------------------------------------------------------------------------------
     **Data Access**
-    --------------------------- 	-------------------------------------------------------------------------------------
-    Read Person Attributes		Read person attributes.
-    Match Person Attributes		Check the value of attributes without exposing private data.
-    Verify Person Attributes		Evaluate simple expressions on person's attributes without exposing private data
-    Query Person UIN	        	Query the persons by a set of attributes, used when the UIN is unknown
-    Query Person List 	        	Query the persons by a list of attributes and their values.
-    Read document	        	Read in a selected format (PDF, image, etc.) a document such as a marriage certificate
-    --------------------------- 	-------------------------------------------------------------------------------------
+    -----------------------------------   -------------------------------------------------------------------------------------
+    Read Person Attributes		  Read person attributes.
+    Match Person Attributes		  Check the value of attributes without exposing private data.
+    Verify Person Attributes		  Evaluate simple expressions on person's attributes without exposing private data
+    Query Person UIN	        	  Query the persons by a set of attributes, used when the UIN is unknown
+    Query Person List 	        	  Query the persons by a list of attributes and their values.
+    Read document	        	  Read in a selected format (PDF, image, etc.) a document such as a marriage certificate
+    -----------------------------------   -------------------------------------------------------------------------------------
     **UIN Management**
-    --------------------------- 	-------------------------------------------------------------------------------------
-    Generate UIN                	Generate a new UIN
-    --------------------------- 	-------------------------------------------------------------------------------------
+    -----------------------------------   -------------------------------------------------------------------------------------
+    Generate UIN                	  Generate a new UIN
+    -----------------------------------   -------------------------------------------------------------------------------------
     **Enrollment Services**
-    --------------------------- 	-------------------------------------------------------------------------------------
-    Create Person			Insert a new person
-    Read Person				Retrieve the attributes of a person
-    Update Person			Update a person
-    Delete Person			Delete a person
-    Find People				Retrieve a list of people who match passed in search criteria
-    ---------------------------         -------------------------------------------------------------------------------------
+    -----------------------------------   -------------------------------------------------------------------------------------
+    Create Person			  Insert a new person
+    Read Person				  Retrieve the attributes of a person
+    Update Person			  Update a person
+    Delete Person			  Delete a person
+    Find People				  Retrieve a list of people who match passed in search criteria
+    -----------------------------------   -------------------------------------------------------------------------------------
     **Population Registry Services**
-    ---------------------------         -------------------------------------------------------------------------------------
-    Create Person			Create a new person
-    Read Person				Read the attributes of a person
-    Update Person			Update a person
-    Delete Person			Delete a person and all its identities
-    Create Identity			Create a new identity in a person
-    Read Identity			Read one or all the identities of one person
-    Update Identity			Update an identity. An identity can be updated only in the status claimed
-    Partial Update Identity		Update part of an identity. Not all attributes are mandatory. An identity can be updated only in the status claimed
-    Delete Identity			Delete an identity
-    Set Identity Status			Set an identity status
-    Define Reference			Define the reference identity of one person
-    Read Reference			Read the reference identity of one person
-    Read Galleries			Read the ID of all the galleries
-    Read Gallery Content		Read the content of one gallery, i.e. the IDs of all the records linked to this gallery
-    ---------------------------         -------------------------------------------------------------------------------------
+    -----------------------------------   -------------------------------------------------------------------------------------
+    Create Person			  Create a new person
+    Read Person				  Read the attributes of a person
+    Update Person			  Update a person
+    Delete Person			  Delete a person and all its identities
+    Create Identity			  Create a new identity in a person
+    Read Identity			  Read one or all the identities of one person
+    Update Identity			  Update an identity. An identity can be updated only in the status claimed
+    Partial Update Identity		  Update part of an identity. Not all attributes are mandatory. An identity can be updated only in the status claimed
+    Delete Identity			  Delete an identity
+    Set Identity Status			  Set an identity status
+    Define Reference			  Define the reference identity of one person
+    Read Reference			  Read the reference identity of one person
+    Read Galleries			  Read the ID of all the galleries
+    Read Gallery Content		  Read the content of one gallery, i.e. the IDs of all the records linked to this gallery
+    -----------------------------------   -------------------------------------------------------------------------------------
     **Biometrics**
-    ---------------------------         -------------------------------------------------------------------------------------
-    Create				Create a new encounter. No identify is performed
-    Read				Read the data of an encounter
-    Update				Update an encounter
-    Delete				Delete an encounter
-    Read Template			Read the generated template
-    Read Galleries 			Read the ID of all the galleries
-    Read Gallery content		Read the content of one gallery, i.e. the IDs of all the records linked to this gallery
-    Identify				Identify a person using biometrics data and filters on biographic or contextual data
-    Verify				Verify an identity using biometrics data
-    ---------------------------         -------------------------------------------------------------------------------------
+    -----------------------------------   -------------------------------------------------------------------------------------
+    Create				  Create a new encounter. No identify is performed
+    Read				  Read the data of an encounter
+    Update				  Update an encounter
+    Delete				  Delete an encounter
+    Read Template			  Read the generated template
+    Read Galleries 			  Read the ID of all the galleries
+    Read Gallery content		  Read the content of one gallery, i.e. the IDs of all the records linked to this gallery
+    Identify				  Identify a person using biometrics data and filters on biographic or contextual data
+    Verify				  Verify an identity using biometrics data
+    -----------------------------------   -------------------------------------------------------------------------------------
     **Credential Services**
-    ---------------------------         -------------------------------------------------------------------------------------
-    List Credential Profiles		Retrieve the list of credential profiles
-    Read Credential Profiles		Retrieve the credential profile
-    Create Credential Issuance Request	Request issuance of a secure document / credential
-    Read Credential Issuance Request	Retrieve the data/status of an issuance
-    Update Credential Issuance Request	Update the requested issuance of a secure document / credential
-    Delete Credential Issuance Request	Delete/cancel the requested issuance of a secure document / credential
-    Read Credential			Retrieve the attributes/status of an issued credential (smart card, mobile, passport, etc.)
-    Suspend Credential			Suspend an issued credential. For electronic credentials this will suspend any PKI certificates that are present
-    Unsuspend Credential		Unsuspend an issued credential. For electronic credentials this will unsuspend any PKI certificates that are present
-    Cancel Credential			Cancel an issued credential. For electronic credentials this will revoke any PKI certificates that are present
-    ---------------------------         -------------------------------------------------------------------------------------
+    -----------------------------------   -------------------------------------------------------------------------------------
+    List Credential Profiles		  Retrieve the list of credential profiles
+    Read Credential Profiles	          Retrieve the credential profile
+    Create Credential Issuance Request    Request issuance of a secure document / credential
+    Read Credential Issuance Request	  Retrieve the data/status of an issuance
+    Update Credential Issuance Request	  Update the requested issuance of a secure document / credential
+    Delete Credential Issuance Request	  Delete/cancel the requested issuance of a secure document / credential
+    Read Credential			  Retrieve the attributes/status of an issued credential (smart card, mobile, passport, etc.)
+    Suspend Credential			  Suspend an issued credential. For electronic credentials this will suspend any PKI certificates that are present
+    Unsuspend Credential		  Unsuspend an issued credential. For electronic credentials this will unsuspend any PKI certificates that are present
+    Cancel Credential			  Cancel an issued credential. For electronic credentials this will revoke any PKI certificates that are present
+    -----------------------------------   -------------------------------------------------------------------------------------
     **ID Usage**
-    ---------------------------         -------------------------------------------------------------------------------------
-    Verify ID				Verify Identity based on UIN and set of attributes (biometric data, demographics, credential)
-    Identify				Identify a person based on a set of attributes (biometric data, demographics, credential)
-    Read Attributes			Read person attributes
-    Read Attributes set			Read person attributes corresponding to a predefined set name
-    --------------------------- 	-------------------------------------------------------------------------------------
+    -----------------------------------   -------------------------------------------------------------------------------------
+    Verify ID				  Verify Identity based on UIN and set of attributes (biometric data, demographics, credential)
+    Identify				  Identify a person based on a set of attributes (biometric data, demographics, credential)
+    Read Attributes			  Read person attributes
+    Read Attributes set			  Read person attributes corresponding to a predefined set name
+    -----------------------------------	  -------------------------------------------------------------------------------------
     **Under discussion**
-    --------------------------- 	-------------------------------------------------------------------------------------
-    Create Document 	        	Add a new document for a person
-    Read Document			Retrieve document data
-    Update Document			Update a document for a person
-    Delete Document			Delete a document for a person
-    Update Document Validation Status	Updates the status of a document validation
-    Read Document Validation Status	Retrieve the status of a document validation
-    Create Biometric			Add a new biometric for a person
-    Read Biometric Metadata		Retrieve biometric data
-    Update Biometric			Update a biometric for a person
-    Delete Biometric			Delete a biometric for a person
-    Update Biometric Validation Status	Updates the status of a biometric validation
-    Read Biometric Validation Status	Retrieve the status of a biometric validation
-    Create Biographic			Add a new biographic for a person
-    Read Biographic			Retrieve biographic data
-    Update Biographic			Update a biographic for a person
-    Delete Biographic			Delete a biographic for a person
-    Update Biographic Validation Status	Updates the status of a biographic validation
-    Read Biographic Validation Status	Retrieve the status of a biographic validation
-    ===========================         =====================================================================================
+    -----------------------------------	  -------------------------------------------------------------------------------------
+    Create Document 	        	  Add a new document for a person
+    Read Document			  Retrieve document data
+    Update Document			  Update a document for a person
+    Delete Document			  Delete a document for a person
+    Update Document Validation Status	  Updates the status of a document validation
+    Read Document Validation Status	  Retrieve the status of a document validation
+    Create Biometric			  Add a new biometric for a person
+    Read Biometric Metadata		  Retrieve biometric data
+    Update Biometric			  Update a biometric for a person
+    Delete Biometric			  Delete a biometric for a person
+    Update Biometric Validation Status	  Updates the status of a biometric validation
+    Read Biometric Validation Status	  Retrieve the status of a biometric validation
+    Create Biographic			  Add a new biographic for a person
+    Read Biographic			  Retrieve biographic data
+    Update Biographic			  Update a biographic for a person
+    Delete Biographic			  Delete a biographic for a person
+    Update Biographic Validation Status	  Updates the status of a biographic validation
+    Read Biographic Validation Status	  Retrieve the status of a biographic validation
+    ===================================   =====================================================================================
 
 Components vs Interfaces Mapping
 --------------------------------
